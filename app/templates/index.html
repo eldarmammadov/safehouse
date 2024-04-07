@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamera və Domofon Quraşdırılması</title>
+    <link href="{{url_for('static',filename='styles.css') }}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static',filename='camera.jpg') }}" />
+        </div>
+        <div class="container">
+            <h1>SAFEHOUSE </h1>
+            <h2></hr > Ev və İş Yerlərinizə Kamera və Domofon Quraşdırılması Xidmətləri</h2>
+            <nav>
+                <ul>
+                    <li><a href="#services">Kameralar</a></li>
+                    <li><a href="#services">Xidmətlər</a></li>
+                    <li><a href="#contact">Əlaqə</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Kamera quraşdırılması xidmətləri</h2>
+            <p>Evinizə və həyətlərinizə və yaxud iş ərazilərinizə </br> kamera vasitəsilə 24/7 nəzarət etmək istəyirsinizsə bizimlə əlaqə saxlayın</p>
+            <a href="#services" class="btn-two">Əlavə Məlumat</a>
+        </div>
+    </section>
+
+    <section class="videoplayer">
+        <div class="container">
+        <div class="left">
+            <p class="text-in-box">24/7 Kamera Müşahidəsi</p>
+            <video playsinline="playsinline" autoplay preload loop="loop" poster="{{ url_for('static',filename='camera.jpg') }}" width="545">
+                <source src="{{ url_for('static',filename='video_two.mp4') }}" type="video/mp4">
+            </video>
+        </div>
+        <div class="center">
+            <p class="text-in-box">Kameraların quraşdırılması üçün ən ideal müşahidə nöqtəsinin müəyyən edilməsi</p>
+            <video controls playsinline="playsinline" autoplay preload loop="loop" poster="{{ url_for('static',filename='camera.jpg') }}" width="545">
+                <source src="{{ url_for('static',filename='HikvisionAcuSenseCamera.webm') }}" type="video/webm">
+            </video>
+        </div>
+        <div class="right">
+            <p class="text-in-box">Telefon və ya tablet vasitəsilə daim canlı izləmək imkanı</p>
+            <video playsinline="playsinline" autoplay preload loop="loop" poster="{{ url_for('static',filename='camera.jpg') }}" width="545">
+                <source src="{{ url_for('static',filename='video_one.mp4') }}" type="video/mp4">
+            </video>
+        </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Xidmətlərimiz</h2>
+            <div class="service">
+                <h3>Giriş domofonlarının quraşdırılması</h3>
+                <p>İş yeri və həyət evlərinizdə qapının yerinizdən ayrılmadan idarə olunması.</p>
+                <img src="{{ url_for('static',filename='foto-1.jpg') }}" width="200"/>
+            </div>
+            <div class="service">
+                <h3>Kamera Quraşdırılması</h3>
+                <p>Ev və iş yerlərinizə kameraların quraşdırılması.</p>
+                <img src="{{ url_for('static',filename='foto-2.jpg') }}" width="200"/>
+            </div>
+            <div class="service">
+                <h3>Kamera Müşahidəsi Barədə Məsləhətlər</h3>
+                <p>SafeHouse Consulting olaraq sizə kameralarınızın quraşdırılacağı yerlər barədə təcrübəmizə dayanan tövsiyyələr verə bilər.</p>
+                <img src="{{ url_for('static',filename='foto-3.jpg') }}" width="200"/>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Bizimlə Əlaqə</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn"><span>Göndər</span></button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p class="text-footer">&copy; 2024 Safe House. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

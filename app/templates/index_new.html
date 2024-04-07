@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>==Safehouse.az==</title>
+    <link href="{{url_for('static',filename='styles-new.css') }}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <div class="header-all">
+        <div class="header-left">
+            <div class="header-logo">
+                <img src="{{ url_for('static',filename='camera.jpg') }}" />
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="header-right-upper">
+                <h2>Evinizin təhlükəsizliyini SAFEHOUSE əmanət edin</h2>
+            </div>
+            <div class="header-right-down">
+                <div class="navbar-in-header">
+                    <ul>
+                        <li>
+                            <a href="#cams">Kameralar</a>
+                            <ul>
+                                <li><a href="#ip-kameralar">IP Kameralar</a></li>
+                                <li><a href="#analoq-kameralar">Analoq Kameralar</a></li>
+                                <li><a href="#recommendations-ours">Bizim tövsiyyələr</a></li>
+                            </ul>
+                        </li>
+                        <li>Xidmətlər</li>
+                        <li>Əlaqə</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="body-section">
+    <div class="big-picture-social-connectedness">
+             <span><img src="{{ url_for('static',filename='instagram.png') }}" /></span>
+             <span><img src="{{ url_for('static',filename='whatsapp.png') }}" /></span>
+             <span><img src="{{ url_for('static',filename='youtube.png') }}" /></span>
+        </div>
+</section>
+<section class="body-section">
+    <div class="big-picture">
+
+        <div class="carousel-btstrap">
+
+            <div class="big-picture-text">
+            <h2>24/7 evinizin müşahidəsi</h2>
+        </div>
+
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+                <video playsinline="playsinline" autoplay preload loop="loop" poster="{{ url_for('static',filename='camera.jpg') }}" width="545">
+                    <source src="{{ url_for('static',filename='video_one.mp4') }}" type="video/mp4">
+                </video>
+            </div>
+            <div class="carousel-item">
+                <video playsinline="playsinline" autoplay preload loop="loop" poster="{{ url_for('static',filename='camera.jpg') }}" width="545">
+                    <source src="{{ url_for('static',filename='video_two.mp4') }}" type="video/mp4">
+                </video>
+            </div>
+            <div class="carousel-item">
+                <video playsinline="playsinline" autoplay preload loop="loop" poster="{{ url_for('static',filename='camera.jpg') }}" width="545">
+                <source src="{{ url_for('static',filename='video_three.mp4') }}" type="video/mp4">
+                </video>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        </div>
+    </div>
+</section>
+<section class="body-section">
+    <div class="analog-cam-text">
+        <h2>Analoq Kameralar</h2>
+    </div>
+    <div class="container-photo-trio">
+        <div class="photo-01">
+            <img src="{{ url_for('static',filename='DS-2CE12KF3T-L.png') }}" height="300" width="345"/>
+            <h3>3K ColorVu Dual-light Fixed Bullet Camera</h3>
+            <p>High quality imaging with 3K, 2960 × 1665 resolution
+            Excellent low-light performance
+            24/7 color imaging with F1.0 aperture</p>
+        </div>
+        <div class="photo-02">
+            <img src="{{ url_for('static',filename='DS-2CD1027G2-L(UF).png') }}" height="300" width="345"/>
+            <h3>2 MP ColorVu MD 2.0 Fixed Bullet Network Camera</h3>
+            <p>High quality imaging with 2 MP resolution
+            24/7 colorful imaging
+            Support Human and Vehicle Detection</p>
+        </div>
+        <div class="photo-03">
+            <img src="{{ url_for('static',filename='DS-2CE12DF3T-PIRXOS.png') }}" height="300" width="345"/>
+            <h3>2 MP ColorVu PIR Siren Audio Fixed Bullet Camera</h3>
+            <p>High quality imaging with 2 MP, 1920 × 1080 resolution
+            24/7 color imaging with F1.0 aperture</p>
+        </div>
+    </div>
+</section>
+<section class="body-section">
+    <div class="ip-kameralar-text">
+        <h2>IP Kameralar</h2>
+    </div>
+    <div  class="grid">
+        <div id="ip-kameralar" class="photo-04">
+            <img src="{{ url_for('static',filename='DS-2CD1023G2-LIU.png') }}" height="300" width="345"/>
+            <h3>2 MP Smart Hybrid Light Fixed Bullet Network Camera</h3>
+            <p>High quality imaging with 2 MP resolution
+            Support Human and Vehicle Detection
+            Smart Hybrid Light: advanced technology with long range
+            Built-in microphone for real-time audio security</p>
+        </div>
+        <div class="photo-05">
+            <img src="{{ url_for('static',filename='DS-2CD1027G2-L(UF).png') }}" height="300" width="345"/>
+            <h3>2 MP ColorVu MD 2.0 Fixed Bullet Network Camera</h3>
+            <p>High quality imaging with 2 MP resolution
+            24/7 colorful imaging
+            Support Human and Vehicle Detection</p>
+        </div>
+    </div>
+</section>
+<section class="footer_section">
+    <div class="footer-grid">
+        <div class="form-tag-for-email"></div>
+        <div class="footer-address">
+            Ünvan: <br> Zabrat qəsəbəsi <br>Ayxan marketin yanı
+        </div>
+        <div class="footer-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d189.68594154840653!2d49.950136538304804!3d40.47581665343585!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2saz!4v1712493603146!5m2!1sen!2saz" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</section>
+<footer>
+    <p>Copyright 2024, Safehouse</p>
+</footer>
+</body>
+</html>

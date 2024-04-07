@@ -1,0 +1,193 @@
+body {
+    font-family: Poppins, Verdana,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    color: #FEE169;
+}
+
+header {
+    background-color: #50B8B4;
+    color: #2E95A3;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #2E95A3;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+  transition: 1s ease-in-out;
+  background: #E2FFA8;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    height: 179px;
+    width: 167px;
+}
+
+.hero {
+    height: 300px;
+    color: #C6FFFA;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.hero h2 {
+    margin: 0;
+}
+
+.btn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #91C9FF;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #4F95DA;
+}
+
+.btn:hover {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+.videoplayer .container {
+    margin-bottom: 420px;
+}
+.videoplayer {
+    position: static;
+    margin-bottom: 420px;
+    height: 100%;
+    width: 100%;
+    margin: 10px auto 10px auto;
+}
+
+.left, .center, .right {
+    float: left;
+    width: 30%;
+    height: 365;
+    margin: 5px;
+    padding: 5px;
+    border: 10px solid hsla(0,0%,100%,.5);
+    border-style: groove;
+    background: white;
+    background-clip: padding-box;
+    box-shadow: 0 0 0 10px #655, 0 0 0 15px deeppink;
+    overflow: auto;
+}
+
+.text-in-box {
+    position: relative;
+    background-color: rgba(0,0,0,.5);
+    border-color: transparent;
+    color: white;
+    text-align: center;
+    box-shadow: 0 2px 5px 15px rgba(0,0,0,.6);
+    margin: 0px auto 0px auto;
+}
+
+.service {
+    float: left;
+    width: 33%;
+}
+
+.service h3,p {
+    background-color: #eaf5fa;
+    border: dotted;
+    border-color: #ffb600;
+    border-style: outset;
+    height: 80px;
+}
+
+.service p {
+    position: relative;
+    float: bottom;
+    top: 100px;
+    left: 0px;
+}
+
+.services {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.services .service {
+    margin-bottom: 30px;
+}
+
+.service img {
+    width: 80%;
+    height: 400px;
+    box-shadow: 0 0 0 10px #655, 0 0 0 15px deeppink;
+    border-style: groove;
+}
+
+.contact {
+    background-color: pink;
+    padding: 100px 0;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-style: ridge;
+    border-radius: 5px;
+}
+
+.contact form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    border-style: inset;
+    cursor: pointer;
+}
+
+.text-footer {
+    background-color: white;
+}
+
+footer {
+    background-color: #1a428a;;
+    color: #333;;
+    text-align: center;
+    padding: 20px 0;
+}
